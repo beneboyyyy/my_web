@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal portfolio  Website</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Benedict.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a> 
+        </nav>
+    </header>
+
+
+    <section class="home">
+      <div class="container">
+          <div class="home-content">
+              <h1>Hi, I'm Benedict Galgo</h1>
+              <h3>Information Technology Student</h3>
+              <p>This is my official website to showcase my works. Utilizing the latest technologies and industry best practices, I pride myself on delivering solutions that not only meet but exceed expectations, setting new standards for excellence in web and app development.</p>
+              <div class="btn-box">
+                  <a href="#" class="btn btn-primary">Hire Me</a>
+                  <a href="#" class="btn btn-secondary">Let's Talk</a>
+              </div>
+          </div>
+  
+          <div class="home-sci">
+              <a href="#" onclick="goToFacebook()"><i class='bx bxl-facebook'></i></a>
+              <a href="#" onclick="goToInstagram()"><i class='bx bxl-instagram'></i></a>
+              <a href="#" onclick="goToGitHub()"><i class='bx bxl-github' ></i></a>
+          </div>
+  
+          <div class="home-img">
+              <div class="glowing-circle">
+                  <span></span>
+                  <span></span>
+                  <div class="image"><img src="home.jpg" alt=""></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="about-img">
+            <div class="glowing-circle2">
+              <span></span>
+              <span></span>
+              <div class="img"><img src="about_img.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-content text-center text-md-left">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web and App developer</h3>
+            <p>With six years of experience in web and app development, I possess a deep understanding of various programming languages and frameworks. My proficiency in both frontend and backend development enables me to create user-centric solutions that are both functional and visually appealing. I'm committed to continuous learning and collaboration, always seeking to deliver high-quality projects that exceed client expectations.</p>
+            <div class="educational-timeline">
+                <h3>Educational Background</h3>
+                <ul>
+                  <li>
+                    <h4>Bachelor's Degree in Information Technology<h4>
+                    <p>National University Lipa, 2026</p>
+                  </li>
+                  <li>
+                    <h4>Master in Information Technology</h4>
+                    <p>The Univeristy of Western Australia, 2032</p>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services-background"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+            <h1>My Services</h1>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAvFJREFUeF7t3D/IT1Ecx/H3s9lEUhisioTFoihJjIpiMhifjSwGlE1JmYnBQIpNyUDKRBGbeooVKbv4nXoM8pzzPffe8/tcnvu59ZvuOd/PPa/7/f0Z7u8s4EMisCBJcQiGFjWBoQ0tEhDFuKMNLRIQxbijDS0SEMW4ow0tEhDFdO3oNcARYBewHdggus5/JeYL8B54MzN41OWiukAfBO4AW7oErOKxn4CTwMuaNdZCnwDu1RSc4JijwONo3TXQ+4AXUaGJn98JvCsZ1EC/BVIhH3mBJ8DhIdB7gNcWrhLYCHzOjYw6ehG4URXjQceBB32hLwBXCobPJ+a7v7De88DVvtCXgIuF4tE7YrXdh5+FBV2enUteKx4RlKH/ZDO06K1jaEOLBEQx7mhDiwREMe5oQ4sERDHuaEOLBEQx7mhDiwREMe5oQ4sERDHuaEOLBEQx7mhDiwREMe5oQ4sERDHuaEOLBEQx7mhDiwREMe5oQ4sERDHuaEOLBEQx7mhDiwREMe5oQ4sERDGjdXR6+HpKR+mh/Lk+iD4l5Githo6EGp03dCPIqIyhI6FG5w3dCDIqY+hIqNF5QzeCjMoMgj5X+jdolDyx82eBa7k1R3/oTP9vvj8xsL7LPQY87Au9FvgG3sM00P8BrAe+94VO8+4Cp/re5onMuwmcKa01+uhIczcDr4BNE0Hrusyl2VY/e4G0sVX2qIFOk7cBT71x1V+OH4BDwMfo7tRCpzqpo68DaSMrH3ALSHt0fK3B6AL9u946YPdst5Udy18ANTlDx5wGtmaKpG66PTSgcn76eEh7TKVX9otvpVp9oCuvqemwZ0Bu95e0C86BpmlzKGboOaC6o0WohjZ0KODP6JCozQBDt3EMqxg6JMoPKD0jMaBsOHWUX1qjhC5TGDrsiTYDDN3GMaxi6JCozQBDt3EMqxg6JGozwNBtHMMq2S2Aw5nDBoySO+bPu2Fc/9lsQ4tumKENLRIQxbijDS0SEMW4o0XQvwCT4LZbhjgdxQAAAABJRU5ErkJggg=="/>
+            <h3>Web Development</h3>
+            <p>
+              We specialize in crafting responsive and user-friendly websites meticulously tailored to suit your unique requirements, ensuring a seamless digital experience for your audience. Our dedicated team works closely with you to understand your goals, delivering bespoke solutions that elevate your online presence and drive results.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAyhJREFUeF7t3T2sDGEUxvH/FQWtRnkRDRqSSyk+EiJCKPRqiUpCREQiKpFoJDp6kVCoFD4KSkTQKAidREVEad/YG7J25mTuPu+ZWXm2PbPnnPnN2Zm5c5N3FvAnRWAhpYqLYOikITC0oZMEksp4og2dJJBUpvZELwFbgQ3AqqR96lLmM/AWeA386PLFrtvWgr4InAfWdm2ox+2vAudq1VdDF9j7wIFaDVfO+ww4BHxT11FDPwAOq5tMzvcY2KeuqYQ+CdxWN9hTvlPATWVtJfQLYIeyuR5zvQO2KeuroNcBX5WNDSDXeuCLqg8V9BagTMH/9NkDPFXtkAp6O/Cypanj47sRVd+KPKk9G7r5kEmHw9CGVpwdWnP41FGd+HcBQxu6WSB1OkQHIrVnXwx9MRTN7UB+hZ5oT7QneppA6oVFdAhSe/apw6cO0dz6YlgdMirgU0ckJIobWgQZpTF0JCSKG1oEGaUxdCQkihtaBBmlMXQkJIobWgQZpTF0JCSKG1oEGaUxdCQkihtaBBmlMXQkJIobWgQZpTF0JCSKG1oEGaUxdCQkihtaBBmlMXQkJIobWgQZpTF0JCSKG1oEGaUxdCQkihtaBBmlMXQkJIobWgQZpTF0JCSKG1oEGaUxdCQkihtaBBmlMXQkJIobWgQZpTF0JCSKG7oFchewerQK2XMBtqGnIB4FrgObxrGyrNBZ4NYM4IaewCsrQZbVFqd9DgIPV4ht6Am4a6MF/840YN4dHYQThv4jMMuyOfeAYw2Yr2ZYAs4T7Ylu/o3WnA6fo/9yrwldyviuY4xdG3r5mPo+2gsMtt/7eHWDZp9Z7pT+yWroOYPeDLxf4R8OQ/3afuCRqjnVRJcl56u+jEC1wx3ylOcqHzps37qpCroUKUsA71Y11nOej8BGZQ9K6PLM4Y6yuR5znQZuKOsroUtfbc8llH3XzPVk9Ovcqy6ghl4DlCdq8/rmioJ8BPg+dOjl/i6M/hNyRd1s5XyXgUu1aqgnerLPneNXOC0O9BVOn4A341c4/ayFXPLWhq7Z+1zlNnTS4TK0oZMEksp4og2dJJBUxhOdBP0LKEEoaoZxFgcAAAAASUVORK5CYII="/>
+            <h3>App Development</h3>
+            <p>We design and develop custom mobile applications for iOS and Android platforms. From concept to deployment, we prioritize innovation and user-centric design, ensuring your app stands out in today's competitive market.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-item">
+            <img src="data:image/png;base64,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"/>
+            <h3>System Development</h3>
+            <p>We offer custom system development services to meet your unique business requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container"></div> 
+    <h2>Contact Us</h2>
+        <div class="col-md-12">
+            <form class="contact-form">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p>&reg; 2024 All rights reserved.</p>
+</footer>
+      
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
